@@ -1,18 +1,16 @@
 {
-    "name": "pizdec/laravel",
-    "description": "Your project description",
+    "doctrine/orm": "^2.10" ,
+    "name": "laravel/laravel",
     "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
     "license": "MIT",
-    "authors": [
-        {
-            "name": "SCP-0076",
-            "email": "jdjdjxhhxjd17@gmail.com"
-        }
-    ],
     "require": {
         "php": "^7.3|^8.0",
+        "doctrine/orm": "^2.14",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
+        "laravel-doctrine/orm": "*",
         "laravel/framework": "^8.75",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5"
