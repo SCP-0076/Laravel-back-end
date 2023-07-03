@@ -5,14 +5,20 @@ namespace App\Http\Controllers;
 use App\Models\Farm;
 use App\Models\User;
 use Illuminate\Http\Request;
-class MyFarmController extends Controller
+class FarmController extends Controller
 {
     public function index()
     {
         $user = auth()->user();
         if ($user) {
-            $farms = $user->farms()->paginate(10);
-            return response()->json($farms);
+            // Doctrine metode (Jau ir iebuveta Laravela)
+
+
+            // dd ir Laravel Debug sistema, tas nozime Debug,die. Talak kods neizpildisies
+            dd($user);
+
+            $farms = Farm::Where('user_id', $user->id);
+            return response()->json($farms->paginate(10));
         }
     
     // If the user is not authenticated, return a response indicating the unauthorized access
