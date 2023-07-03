@@ -8,6 +8,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use App\Models\Farm;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Proxy;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class User extends Model
